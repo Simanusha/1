@@ -42,6 +42,7 @@ def sort_by_surname(elem):
     return elem.split()[1]
 
 def print_full_names_sorted(group):
+    #1.Создать новый пустой список
     list = []
     for student in group:
         full_name = student[0] #строка в стьюдент
@@ -49,7 +50,9 @@ def print_full_names_sorted(group):
         first_name = lst_full_name[0]
         second_name = lst_full_name[1]
         full_name2 = second_name + " " + first_name
+        #2.Добавить в него полное имя
         result_list = list.append(full_name)
+        #3.Отсортировать
     list.sort(key=sort_by_surname) #сортировка по фамилиям, создать новую функцию(стр41)
     for name in list:
         print(name)
