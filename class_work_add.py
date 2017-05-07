@@ -68,3 +68,9 @@ def print_full_names_sorted(group):
 # print_reverse_names(group)
 # print_ranks(group)
 print_full_names_sorted(group)
+
+
+for idx, elem in enumerate([1,2,3]):
+    print(idx, elem)
+
+l = [1,2,3]
